@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="38.059174"
+   height="34.775684"
+   viewBox="0 0 38.059175 34.775683"
+   fill="none"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="organisation-grey.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.0416667"
+     inkscape:cx="-17.467456"
+     inkscape:cy="29.609467"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     lock-margins="true" />
+  <path
+     d="m 23.133943,19.850457 h 1.641743 V 21.4922 h -1.641743 z"
+     fill="currentColor"
+     id="path2"
+     style="fill:#333333;stroke-width:0.820871;fill-opacity:1" />
+  <path
+     d="m 24.775686,16.566971 h -1.641743 v 1.641743 h 1.641743 z"
+     fill="currentColor"
+     id="path4"
+     style="fill:#333333;stroke-width:0.820871;fill-opacity:1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 19.850457,13.283486 h 8.208715 v 11.4922 H 10 V 10 h 9.850457 z M 15.7461,11.641743 h 2.462614 v 1.641743 H 15.7461 Z m 2.462614,11.4922 V 21.4922 H 15.7461 v 1.641743 z m 0,-3.283486 V 18.208714 H 15.7461 v 1.641743 z m 0,-3.283486 V 14.925229 H 15.7461 v 1.641742 z m 8.208715,6.566972 v -8.208714 h -6.566972 v 1.641742 H 21.4922 v 1.641743 h -1.641743 v 1.641743 H 21.4922 V 21.4922 h -1.641743 v 1.641743 z m -14.775686,0 V 21.4922 h 2.462614 v 1.641743 z m 0,-3.283486 h 2.462614 v -1.641743 h -2.462614 z m 2.462614,-3.283486 v -1.641742 h -2.462614 v 1.641742 z m -2.462614,-3.283485 h 2.462614 v -1.641743 h -2.462614 z"
+     fill="currentColor"
+     id="path6"
+     style="fill:#333333;stroke-width:0.820871;fill-opacity:1" />
+</svg>

@@ -1,0 +1,62 @@
+.folder {
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.sliceWrap {
+  width: 20vw;
+  height: 4vw;
+  margin: 0;
+  margin-left: 0.5vw;
+  text-align: center;
+  border-top: 2px solid var(--font-color);
+  border-left: 2px solid var(--font-color);
+  border-right: 2px solid var(--font-color);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: ease-in-out 0.3s;
+  background-color: white;
+}
+
+.sliceWrap:hover {
+  cursor: pointer;
+  margin-top: 20px;
+  z-index: 10;
+  position: absolute;
+}
+
+.sliceWrap span {
+  font-size: 2vw;
+  font-family: 'RedHatMono-Regular';
+}
+
+.contentsWrap {
+  margin: 0 auto;
+  margin-top: 3vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.folderBody {
+  background-color: white;
+
+  margin-top: 0;
+  height: 20vh;
+  border: 2px solid var(--font-color);
+  border-radius: 5px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: block;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sliceWrap span {
+    font-size: 3.8vw;
+  }
+}

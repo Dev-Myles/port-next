@@ -1,14 +1,25 @@
+.folderHeader {
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: 5vw;
+  font-family: 'Jost-Medium';
+}
+
 .folder {
   position: relative;
-  width: 98%;
+  width: min-content;
+
   margin: 0 auto;
 }
 
 .sliceWrap {
-  width: 20vw;
-  height: 4vw;
+  width: 18vw;
+  height: 2.8vw;
   margin: 0;
-  margin-left: 0.5vw;
+
   text-align: center;
   border-top: 2px solid var(--font-color);
   border-left: 2px solid var(--font-color);
@@ -20,43 +31,65 @@
   align-items: center;
   flex-direction: column;
   transition: ease-in-out 0.3s;
-  background-color: white;
+  background-color: var(--background);
 }
 
 .sliceWrap:hover {
   cursor: pointer;
-  margin-top: 20px;
-  z-index: 10;
-  position: absolute;
 }
 
 .sliceWrap span {
   font-size: 2vw;
-  font-family: 'RedHatMono-Regular';
+  font-family: 'Jost-Medium';
 }
 
 .contentsWrap {
   margin: 0 auto;
   margin-top: 3vw;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 'e t a c';
+}
+
+#slice1 {
+  grid-area: e;
+}
+#slice2 {
+  grid-area: t;
+}
+#slice3 {
+  grid-area: a;
+}
+#slice4 {
+  grid-area: c;
 }
 
 .folderBody {
-  background-color: white;
+  background-color: inherit;
 
   margin-top: 0;
-  height: 20vh;
+  height: fit-content;
   border: 2px solid var(--font-color);
-  border-radius: 5px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  min-height: 50vh;
+  border-top-right-radius: 0vw;
+  border-bottom-right-radius: 1vw;
   display: block;
   position: relative;
 }
 
 @media only screen and (max-width: 1000px) {
   .sliceWrap span {
-    font-size: 3.8vw;
+    font-size: 5.8vw;
+  }
+
+  .sliceWrap {
+    width: 24vw;
+    height: 8vw;
+  }
+  .folderHeader {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    font-size: 7vw;
   }
 }

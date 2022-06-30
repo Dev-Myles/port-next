@@ -1,0 +1,72 @@
+.fadeWrap {
+  animation: fadeIn 0.75s;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 9vw;
+}
+
+.fadeWrap span {
+  font-family: 'Jost-Medium';
+  font-size: 5vw;
+}
+
+.fadeWrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fadeWrap ul li {
+  display: inline;
+  margin: 2vw;
+  font-size: 2vw;
+
+  padding: 0;
+}
+
+.fadeWrap ul li span {
+  vertical-align: middle;
+  font-size: 2vw;
+}
+
+#osHeader {
+  font-size: 3vw;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .fadeWrap {
+    font-size: 7vw;
+    margin-top: 5vw;
+  }
+
+  .fadeWrap span {
+    font-family: 'Jost-Medium';
+    font-size: 10vw;
+  }
+
+  .fadeWrap ul li {
+    display: block;
+    margin: 2vw;
+    font-size: 5vw;
+  }
+
+  .fadeWrap ul li span {
+    font-size: 4vw;
+  }
+
+  #osHeader {
+    font-size: 7vw;
+  }
+}

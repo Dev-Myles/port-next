@@ -33,3 +33,11 @@ a {
   font-family: 'RedHatMono-Regular';
   src: url('/fonts/RedHatMono-Regular.ttf');
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Jost-Medium';
+}

@@ -1,0 +1,45 @@
+.fadeWrap {
+  animation: fadeIn 0.75s;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: 3vw;
+}
+
+.aboutTech {
+  font-size: 2.4vw;
+  width: 30ch;
+  margin: 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 1.5vw;
+}
+
+.header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: 'Jost-Medium';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .fadeWrap {
+    animation: fadeIn 0.75s;
+    text-align: center;
+    font-size: 5.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .aboutTech {
+    font-size: 6.4vw;
+    margin-bottom: 3.5vw;
+    width: fit-content;
+  }
+}

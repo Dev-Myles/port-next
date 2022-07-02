@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { MdNavigateNext, MdOutlineNavigateBefore } from 'react-icons/md';
+
 import { v4 as uuidv4 } from 'uuid';
 import { projects } from '../../lib/projectInfo/projectInfo';
-import ProjectCard from './ProjectCard';
+
 import styles from './projectgallery.module.css';
+
+import ProjectCard from './ProjectCard';
 
 export default function ProjectGallery() {
   const [isProject, setProject] = useState(0);
+
   const { name, desc, video, liveLink, codeBase } = projects[isProject];
 
   const galleryNodes = [...Array(projects.length).keys()];
@@ -32,22 +36,10 @@ export default function ProjectGallery() {
     }
   }
 
-  const animations = {
-    transition: 'opacity .75s ease-in-out',
-    opacity: 0,
-  };
-
-  const transitionStyles = {
-    entering: { opacity: 0 },
-    entered: { opacity: 0 },
-    exiting: { opacity: 1 },
-    exited: { opacity: 1 },
-  };
-
   return (
     <div className={styles.fadeWrap}>
       <ProjectCard
-        style={{ ...animations, ...transitionStyles }}
+        key={uuidv4()}
         name={name}
         desc={desc}
         video={video}
@@ -56,7 +48,12 @@ export default function ProjectGallery() {
       />
 
       <div className={styles.nodesWrap}>
-        <button className={styles.buttons} onClick={() => galleryClick(false)}>
+        <button
+          className={styles.buttons}
+          onClick={() => {
+            galleryClick(false);
+          }}
+        >
           <IconContext.Provider value={{ color: 'var(--font-color)' }}>
             <MdOutlineNavigateBefore />
           </IconContext.Provider>
@@ -71,7 +68,12 @@ export default function ProjectGallery() {
           );
         })}
 
-        <button className={styles.buttons} onClick={() => galleryClick(true)}>
+        <button
+          className={styles.buttons}
+          onClick={() => {
+            galleryClick(true);
+          }}
+        >
           <IconContext.Provider value={{ color: 'var(--font-color)' }}>
             <MdNavigateNext />
           </IconContext.Provider>

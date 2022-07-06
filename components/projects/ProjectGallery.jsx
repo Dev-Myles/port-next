@@ -1,18 +1,12 @@
-import { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { MdNavigateNext, MdOutlineNavigateBefore } from 'react-icons/md';
-
 import { v4 as uuidv4 } from 'uuid';
 import { projects } from '../../lib/projectInfo/projectInfo';
-
+import ProjectCard from './ProjectCard';
 import styles from './projectgallery.module.css';
 
-import ProjectCard from './ProjectCard';
-
-export default function ProjectGallery() {
-  const [isProject, setProject] = useState(0);
-
-  const { name, desc, video, liveLink, codeBase } = projects[isProject];
+export default function ProjectGallery({ project, fn }) {
+  const { name, desc, video, liveLink, codeBase } = projects[project];
 
   const galleryNodes = [...Array(projects.length).keys()];
 
@@ -25,16 +19,6 @@ export default function ProjectGallery() {
     backgroundColor: 'inherit',
     border: '1px solid var(--font-color)',
   };
-
-  function galleryClick(direction) {
-    if (direction && isProject < 2) {
-      setProject(isProject + 1);
-    } else if (!direction && isProject > 0) {
-      setProject(isProject - 1);
-    } else {
-      null;
-    }
-  }
 
   return (
     <div className={styles.fadeWrap}>
@@ -51,7 +35,7 @@ export default function ProjectGallery() {
         <button
           className={styles.buttons}
           onClick={() => {
-            galleryClick(false);
+            fn(false);
           }}
         >
           <IconContext.Provider value={{ color: 'var(--font-color)' }}>
@@ -63,7 +47,7 @@ export default function ProjectGallery() {
             <div
               key={uuidv4()}
               className={styles.galleryNodes}
-              style={i == isProject ? selectedStyle : nonSelectedStyle}
+              style={i == project ? selectedStyle : nonSelectedStyle}
             ></div>
           );
         })}
@@ -71,7 +55,7 @@ export default function ProjectGallery() {
         <button
           className={styles.buttons}
           onClick={() => {
-            galleryClick(true);
+            fn(true);
           }}
         >
           <IconContext.Provider value={{ color: 'var(--font-color)' }}>
@@ -80,7 +64,7 @@ export default function ProjectGallery() {
         </button>
       </div>
       <div className={styles.galleryRatio}>
-        <span>{`${isProject + 1}|${projects.length}`}</span>
+        <span>{`${project + 1}|${projects.length}`}</span>
       </div>
     </div>
   );

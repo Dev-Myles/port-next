@@ -6,6 +6,7 @@
 .welcomeP {
   margin-top: 0;
   padding-top: 0;
+
   font-size: 3rem;
 }
 
@@ -38,14 +39,60 @@
   height: 10px;
 }
 
+.buttonWrap {
+  margin: 0 auto;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-bottom: 20vh;
+}
+
+.buttons {
+  border-radius: 10000px;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--background);
+  width: min-content;
+  padding: 0.5vw;
+  font-size: 1.7vw;
+  font-family: 'RedHatMono-Regular';
+  transition: ease-in-out 0.3s;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+}
+
 @media only screen and (max-width: 1000px) {
   .welcomeP {
     margin: 0 auto;
     font-size: 1.33rem;
-    width: 20ch;
+    width: 28ch;
   }
 
   .sayingP p {
     font-size: 0.78rem;
+  }
+  .introHeader {
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .buttonWrap {
+    margin: 0 auto;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 5vh;
+  }
+
+  .buttons {
+    padding: 2vw;
+    font-size: 4.2vw;
+    font-weight: bolder;
+    font-family: 'RedHatMono-Regular';
   }
 }

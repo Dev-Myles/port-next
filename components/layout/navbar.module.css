@@ -21,6 +21,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .navbarWrap {
+    margin-top: 3vw;
+  }
+
   .imageWrap {
     width: 30%;
   }
@@ -28,5 +32,6 @@
   .linkWrap {
     font-size: 1.3rem;
     justify-content: space-between;
+    margin-right: 3.2vw;
   }
 }

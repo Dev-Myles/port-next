@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './introheader.module.css';
 
-export default function IntroHeader() {
+export default function IntroHeader({ fn }) {
   return (
     <div className={styles.introHeader}>
       <div className={styles.sayingP}>
@@ -10,9 +10,17 @@ export default function IntroHeader() {
       <div>
         <p className={styles.welcomeP}>
           Building my <span className={styles.greenWord}>future</span> one line
-          of code at a time, <br /> I can help{' '}
+          at a time, <br /> I can help
           <span className={styles.greenWord}>you</span> along the way.
         </p>
+        <div className={styles.buttonWrap}>
+          <button onClick={() => fn(1)} className={styles.buttons}>
+            Projects
+          </button>
+          <button onClick={() => fn(4)} className={styles.buttons}>
+            Contact
+          </button>
+        </div>
       </div>
       <div className={styles.borderBottom}>
         <div className={styles.imageWrap}>

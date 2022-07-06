@@ -22,11 +22,51 @@
 }
 
 .video {
-  height: 28vh;
+  height: 24vh;
   margin: 0 auto;
+  padding: 1vw;
 }
 
 .videoWrap {
   margin: 0 auto;
   width: fit-content;
+}
+
+.projectCard {
+  text-align: center;
+}
+
+.projectDesc {
+  padding: 1vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  .buttonWrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vw;
+  }
+
+  .video {
+    height: 40vh;
+    margin: 0 auto;
+  }
+
+  .projectDesc {
+    font-size: 1.5vw;
+    width: 60ch;
+    border-top: 2px solid var(--font-color);
+    padding-top: 1vw;
+    margin: 0 auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-align: center;
+  }
+
+  .projectCardHeader {
+    font-size: 3.5vw;
+    margin: 0;
+    margin-bottom: 0.5vw;
+    padding: 0;
+  }
 }

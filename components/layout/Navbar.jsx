@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AiFillGithub, AiOutlineMessage } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import styles from './navbar.module.css';
 export default function Navbar() {
   return (
@@ -16,14 +16,15 @@ export default function Navbar() {
         />
       </div>
       <div className={styles.linkWrap}>
-        <div className={styles.link}>
-          <span>Contact</span>
-          <AiOutlineMessage />
+        <div className={styles.link} id>
+          <span>Dev-Myles</span>
         </div>
-        <div className={styles.link}>
-          <span>GitHub</span>
-          <AiFillGithub />
-        </div>
+        <a href="https://github.com/Dev-Myles">
+          <div className={styles.link}>
+            <span>GitHub</span>
+            <AiFillGithub />
+          </div>
+        </a>
       </div>
     </div>
   );

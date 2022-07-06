@@ -10,3 +10,18 @@
     opacity: 1;
   }
 }
+
+.formBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBody label {
+  display: flex;
+  flex-direction: column;
+  font-size: 27px;
+}
+
+.formBody input {
+  font-size: 20px;
+}

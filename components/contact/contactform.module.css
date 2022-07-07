@@ -17,11 +17,132 @@
 }
 
 .formBody label {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   font-size: 27px;
 }
 
-.formBody input {
+.formBody input,
+.formBody textarea {
   font-size: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.formBody input {
+  border-radius: 100px;
+  border: none;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.formBody input:hover,
+.formBody textarea:hover {
+  outline: 1px solid var(--accent-color);
+}
+
+.formBody input:focus,
+.formBody textarea:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.formBody textarea {
+  height: 30vh;
+  overflow-y: scroll;
+  resize: none;
+}
+
+.flashMessage {
+  display: flex;
+  padding: 5px;
+  padding-left: 15px;
+  position: absolute;
+  left: 25%;
+  justify-content: space-between;
+  width: 50%;
+
+  margin-top: 1vw;
+  border-radius: 1000px;
+  font-size: 26px;
+  box-shadow: 0 0 20px var(--font-color);
+  align-items: center;
+  transition: ease-in-out 0.3s;
+}
+
+.subButton {
+  width: fit-content;
+  border-radius: 1000px;
+  padding: 20px;
+  padding-left: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 1vw;
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  margin-bottom: 1vw;
+  font-family: 'RedHatMono-Regular';
+  transition: ease-in-out 0.3s;
+}
+
+.subButton:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.postionWrap {
+  position: relative;
+  height: 10vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  .postionWrap {
+    position: relative;
+    height: 20vh;
+  }
+
+  .subButton {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  .formBody label {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+  }
+
+  .formBody input,
+  .formBody textarea {
+    font-size: 20px;
+  }
+
+  .postionWrap {
+    height: 9vh;
+  }
+
+  .flashMessage {
+    left: 0;
+
+    width: 97%;
+
+    margin-top: 1vw;
+    border-radius: 1000px;
+    font-size: 20px;
+    box-shadow: 0 0 20px var(--font-color);
+    align-items: center;
+    transition: ease-in-out 0.3s;
+  }
+
+  .subButton {
+    font-size: 22px;
+    padding: 10px;
+  }
 }

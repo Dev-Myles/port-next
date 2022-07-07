@@ -16,7 +16,7 @@ export default function Navbar() {
         />
       </div>
       <div className={styles.linkWrap}>
-        <div className={styles.link} id>
+        <div className={styles.link}>
           <span>Dev-Myles</span>
         </div>
         <a href="https://github.com/Dev-Myles">

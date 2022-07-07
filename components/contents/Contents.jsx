@@ -16,7 +16,7 @@ export default function Contents({ fn, project, fn2, tab }) {
 
   return (
     <>
-      <div className={styles.folderHeader} id="folder">
+      <div className={styles.folderHeader}>
         <span>Flip through my folder!</span>
       </div>
       <div className={styles.folder}>

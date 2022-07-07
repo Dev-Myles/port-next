@@ -13,6 +13,8 @@ body {
   --background: rgb(240, 240, 240);
   --font-color: hsla(0, 0%, 24%, 1);
   --accent-color: hsla(153, 63%, 48%, 1);
+  --success-text: #4f8a10;
+  --error-text: #d8000c;
 }
 
 a {

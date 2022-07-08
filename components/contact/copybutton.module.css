@@ -1,0 +1,16 @@
+.copyWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.copyWrap:hover {
+  cursor: pointer;
+}
+
+@media only screen and(max-width: 1000px) {
+  .copyWrap {
+    margin-bottom: 10vw;
+  }
+}

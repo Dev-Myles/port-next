@@ -18,6 +18,8 @@
   margin-bottom: 0;
   padding-bottom: 0;
   font-family: 'Jost-Medium';
+  font-size: 5vw;
+  margin-top: 2vw;
 }
 
 @keyframes fadeIn {
@@ -41,5 +43,9 @@
     font-size: 6.4vw;
     margin-bottom: 3.5vw;
     width: fit-content;
+  }
+
+  .header {
+    font-size: 8.3vw;
   }
 }

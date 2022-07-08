@@ -2,6 +2,18 @@
   animation: fadeIn 0.75s;
 }
 
+.bodyWrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  font-family: 'Jost-Medium';
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 2vw;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -14,12 +26,13 @@
 .formBody {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .formBody label {
   margin: 0 auto;
   margin-top: 15px;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-size: 27px;
@@ -59,10 +72,9 @@
   padding: 5px;
   padding-left: 15px;
   position: absolute;
-  left: 25%;
-  justify-content: space-between;
-  width: 50%;
 
+  justify-content: space-between;
+  width: 100%;
   margin-top: 1vw;
   border-radius: 1000px;
   font-size: 26px;
@@ -97,9 +109,31 @@
 .postionWrap {
   position: relative;
   height: 10vh;
+  width: 100%;
+}
+
+.imageWrap {
+  display: block;
+  height: 10vh;
+  width: 30%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.errorMessage {
+  color: var(--error-text);
 }
 
 @media only screen and (max-width: 1000px) {
+  .bodyWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    font-size: 10.3vw;
+  }
+
   .postionWrap {
     position: relative;
     height: 20vh;
@@ -108,6 +142,10 @@
   .subButton {
     margin-top: 3vw;
     margin-bottom: 3vw;
+  }
+
+  .formBody {
+    width: auto;
   }
 
   .formBody label {
@@ -144,5 +182,10 @@
   .subButton {
     font-size: 22px;
     padding: 10px;
+  }
+
+  .imageWrap {
+    height: fit-content;
+    width: 90%;
   }
 }

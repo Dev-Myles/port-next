@@ -5,7 +5,9 @@ import styles from './projectcard.module.css';
 export default function ProjectCard({ name, desc, video, liveLink, codeBase }) {
   return (
     <div className={styles.projectCard}>
-      <h1 className={styles.projectCardHeader}>{name}</h1>
+      <div className={styles.projectCardHeader}>
+        <span>{name}</span>
+      </div>
       <div className={styles.videoWrap}>
         <video playsInline controls className={styles.video}>
           <source src={video} type="video/mp4" />

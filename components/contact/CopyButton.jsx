@@ -7,10 +7,8 @@ export default function CopyButton() {
   const [inProps, setProps] = useState(false);
 
   const defaultStyle = {
-    position: 'absolute',
     fontSize: '22px',
     transition: `ease-in-out 1s`,
-    right: '10%',
 
     opacity: 0,
     color: 'var(--accent-color)',

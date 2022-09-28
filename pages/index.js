@@ -8,7 +8,7 @@ export default function Mainpage() {
   const [isSelected, setSelected] = useState(1);
 
   function galleryClick(direction) {
-    if (direction && isProject < 2) {
+    if (direction && isProject < 3) {
       setProject(isProject + 1);
     } else if (!direction && isProject > 0) {
       setProject(isProject - 1);
